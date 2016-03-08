@@ -7,40 +7,23 @@
 </template>
 
 <script>
-import TopNav from './components/_topnav.vue',
-import LeftNav from './components/_header.vue',
-import Bottom from './components/_footer.vue'
-
 export default {
-  components: {
-    TopNav,
-    LeftNav,
-    Bottom
+  components:{
+      import Header from './views/_Header'
+      import LeftNav from './views/_LeftNav'
+      import Footer from './views/_Footer'
   }
 }
 </script>
 
-<style>
-html {
-  height: 100%;
-}
+<style lang="stylus">
+@import "./assets/css/bootstrap.min.css"
 
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
+*
+  margin 0
+  padding 0
 
-#app {
-  margin-top: -100px;
-  max-width: 600px;
-  font-family: Helvetica, sans-serif;
-  text-align: center;
-}
-
-.logo {
-  width: 100px;
-  height: 100px
-}
+.main
+  margin-left 150px
+  padding 5px
 </style>

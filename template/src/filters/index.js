@@ -1,4 +1,1 @@
-/**
- * Author: Yifan
- * Date: 3/4/16
- */
+'use strict'
