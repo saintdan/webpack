@@ -7,25 +7,24 @@ import SignUp from '../components/login/SignUp.vue'
 
 export default function(router){
 
-    router.map({
-        /* Index */
-        '/':{
-            components: IndexView
+  router.map({
+    /* Index */
+    '/': {
+      component: IndexView
+    },
+    /* 404 */
+    '*': {
+      component: PageNotFound
+    },
+    '/login': {
+      subRoutes: {
+        '/': {
+          component: LogIn
         },
-        /* 404 */
-        '*':{
-            components: PageNotFound
-        },
-        /* Log in */
-        '/login': {
-            subRoutes: {
-                '/login': {
-                    components: LogIn
-                },
-                'signup': {
-                    components: SignUp
-                }
-            }
+        '/signup': {
+          component: SignUp
         }
-    })
+      }
+    }
+  })
 }
