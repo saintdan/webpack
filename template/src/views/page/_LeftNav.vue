@@ -1,14 +1,14 @@
 <template>
     <div class="left_nav">
       <ul>
-        <li><img src="./assets/img/logo.png"/></li>
+        <li><img src="../../assets/img/logo.png"/></li>
         <li><a v-link="{ path: '/' }">首页</a></li>
       </ul>
     </div>
 </template>
 
 <style lang="stylus">
-nav-back = #494646
+nav-back = #C0D1CE
 color-white = #FFF
 font-20 = 20px
 hover-color = #e66

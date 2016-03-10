@@ -1,20 +1,20 @@
 <template>
-<div class="header">
-  <form action="/xx.html" method="post" class="form-inline">
-    <div class="form-group">
-      <input type="text" placeholder="search" class="form-control form-control-sm"/>
-      <div role="group" class="btn-group">
-          <a v-link="{ path: '/login/login' }" class="btn btn-sm btn-primary">Log In</a>
-          <a v-link="{ path: '/login/signup'}" class="btn btn-sm btn-success">Sign Up</a>
+  <div class="header">
+    <form action="/xx.html" method="post" class="form-inline">
+      <div class="form-group">
+        <input type="text" placeholder="search" class="form-control form-control-sm"/>
+        <div role="group" class="btn-group">
+            <a v-link="{ path: '/login/' }" class="btn btn-sm btn-primary">Log In</a>
+            <a v-link="{ path: '/login/signup'}" class="btn btn-sm btn-success">Sign Up</a>
+        </div>
       </div>
-    </div>
-  </form>
-</div>
+    </form>
+  </div>
 </template>
 
 <style lang="stylus">
 .header
-  width 278px
+  width 300px
   position fixed
   top 10px
   right 10px
