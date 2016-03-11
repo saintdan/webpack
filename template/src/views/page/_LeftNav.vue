@@ -1,6 +1,7 @@
 <template>
     <div class="left_nav">
       <ul>
+        <br/>
         <li><img src="../../assets/img/logo.png"/></li>
         <li><a v-link="{ path: '/' }">首页</a></li>
       </ul>
