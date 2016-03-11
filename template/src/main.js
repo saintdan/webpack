@@ -5,9 +5,9 @@ import Router from 'vue-router'
 import Resource from 'vue-resource'
 import Validator from 'vue-validator'
 
-import CustomRouter from './routers'
+import CustomRouter from './routers/index.js'
 
-import App from './App'
+import App from './views/App'
 
 // install router
 Vue.use(Router)

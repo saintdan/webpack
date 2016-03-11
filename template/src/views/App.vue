@@ -1,7 +1,8 @@
 <template>
-  <top></top>
-  <left-nav></left-nav>
-  <div class="main">
+  <div>
+    <top></top>
+    <left-nav></left-nav>
+    <div class="main">
       <!-- main view -->
       <router-view
         class="view"
@@ -9,8 +10,9 @@
         transition
         transition-mode="out-in">
       </router-view>
+    </div>
+    <bottom></bottom>
   </div>
-  <bottom></bottom>
 </template>
 
 <script>
