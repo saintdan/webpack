@@ -5,11 +5,21 @@
       "required": true,
       "label": "Project name"
     },
+    "version": {
+      "type": "string",
+      "required": true,
+      "label": "Project version",
+      "default": "0.0.1-SNAPSHOT"
+    },
     "description": {
       "type": "string",
       "required": false,
       "label": "Project description",
       "default": "A Vue.js project"
+    },
+    "license": {
+      "type": "string",
+      "label": "License type"
     },
     "author": {
       "type": "string",
